@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strix | Phone cases, chargers and screen glass</title>
+  <meta name="description" content="Cases, chargers, cables and screen glass designed to take the knocks so your phone doesn't.">
+  <meta name="color-scheme" content="light dark">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="Strix home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand__name">Strix</span>
+      </a>
+      <nav class="nav__links" aria-label="Product categories">
+        <a href="#cases">Cases</a>
+        <a href="#power">Power</a>
+        <a href="#cables">Cables</a>
+        <a href="#glass">Glass</a>
+      </nav>
+      <a href="#range" class="btn btn--primary btn--sm">Shop now</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero: asymmetric split, copy left, product right -->
+    <section class="hero wrap">
+      <div class="hero__copy">
+        <h1 class="hero__title reveal">Armour for your everyday phone.</h1>
+        <p class="hero__sub reveal" style="--d:1">Cases, chargers, cables and screen glass, designed to take the knocks so your phone doesn't.</p>
+        <div class="hero__ctas reveal" style="--d:2">
+          <a href="#range" class="btn btn--primary">Shop now</a>
+          <a href="#built" class="btn btn--ghost">Why Strix <i class="ph ph-arrow-down-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <figure class="hero__media reveal" style="--d:1">
+        <img src="assets/hero.jpg" alt="Smartphone in a matte navy Strix case standing upright" width="1440" height="1800" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- Range: 4-cell asymmetric bento -->
+    <section class="range wrap" id="range">
+      <h2 class="section-title reveal">Everything your phone needs.</h2>
+      <div class="bento">
+        <a href="#" class="tile tile--cases reveal" id="cases">
+          <span class="tile__mark logo" aria-hidden="true"></span>
+          <div class="tile__body">
+            <h3>Slim cases that soak up drops</h3>
+            <p>From £19</p>
+          </div>
+          <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="tile tile--img tile--power reveal" style="--d:1" id="power">
+          <img src="assets/power.jpg" alt="Navy magnetic power bank attached to a phone on a marble desk" loading="lazy" width="1800" height="1328">
+          <div class="tile__body">
+            <h3>Magnetic power banks</h3>
+            <p>From £39</p>
+          </div>
+          <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="tile tile--img tile--cables reveal" id="cables">
+          <img src="assets/cable.jpg" alt="Coiled navy and white braided USB-C cable next to a compact wall charger" loading="lazy" width="1800" height="1800">
+          <div class="tile__body">
+            <h3>Braided cables and fast chargers</h3>
+            <p>From £12</p>
+          </div>
+          <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="tile tile--img tile--glass reveal" style="--d:1" id="glass">
+          <img src="assets/glass.jpg" alt="Tempered glass screen protector lowered onto a phone screen" loading="lazy" width="1800" height="1800">
+          <div class="tile__body">
+            <h3>Tempered screen glass</h3>
+            <p>From £14</p>
+          </div>
+          <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Promises: plain inline strip, no cards -->
+    <section class="promises wrap" aria-label="Our promises">
+      <div class="promise reveal">
+        <i class="ph ph-truck" aria-hidden="true"></i>
+        <p><strong>Free UK delivery</strong> on orders over £30</p>
+      </div>
+      <div class="promise reveal" style="--d:1">
+        <i class="ph ph-shield-check" aria-hidden="true"></i>
+        <p><strong>Two-year warranty</strong> on everything we sell</p>
+      </div>
+      <div class="promise reveal" style="--d:2">
+        <i class="ph ph-arrow-counter-clockwise" aria-hidden="true"></i>
+        <p><strong>30-day returns</strong> with no questions asked</p>
+      </div>
+    </section>
+
+    <!-- Built: full-bleed lifestyle image with scrim -->
+    <section class="built wrap" id="built">
+      <div class="built__frame reveal">
+        <img src="assets/street.jpg" alt="Hand holding a phone in a navy case while walking down a city street at dusk" loading="lazy" width="1800" height="1028">
+        <div class="built__copy">
+          <h2>Built for real life, not a display shelf.</h2>
+          <p>Every Strix piece is drop-tested and grip-checked before it reaches you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="signup wrap" id="signup">
+      <span class="signup__mark logo reveal" aria-hidden="true"></span>
+      <div class="signup__copy reveal" style="--d:1">
+        <h2>Get first dibs on new drops.</h2>
+        <p>One email a month with new releases and member-only offers.</p>
+        <form class="form" id="signup-form" novalidate>
+          <label for="email">Email address</label>
+          <div class="form__row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="email-msg" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </div>
+          <p class="form__msg" id="email-msg" role="status" aria-live="polite">No spam. Unsubscribe in one click.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand" aria-label="Strix home">
+          <span class="logo" aria-hidden="true"></span>
+          <span class="brand__name">Strix</span>
+        </a>
+        <p>Phone accessories that take the knocks.</p>
+      </div>
+      <nav class="footer__col" aria-label="Shop">
+        <h4>Shop</h4>
+        <a href="#cases">Cases</a>
+        <a href="#power">Power</a>
+        <a href="#cables">Cables</a>
+        <a href="#glass">Glass</a>
+      </nav>
+      <nav class="footer__col" aria-label="Help">
+        <h4>Help</h4>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Warranty</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="wrap footer__legal">
+      <p>&copy; 2026 Strix. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
